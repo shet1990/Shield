@@ -116,6 +116,7 @@ gulp.task('watch', function() {
 
 gulp.task('start', gulp.parallel('watch', 'styles', 'js', 'browser-sync'));
 
+
 /*
   gulp.task('build', ['clean', 'img',  'styles', 'js'], function() {
   
