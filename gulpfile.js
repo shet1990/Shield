@@ -52,14 +52,17 @@ gulp.task('styles-libs', function() {
 gulp.task('js', function() {
   return gulp.src([
       'app/libs/jquery/dist/jquery.min.js',
-      'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+      //'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
       //'app/libs/leaflet/leaflet.js',
       //'app/libs/leaflet/markercluster.js',
       'app/libs/fotorama/fotorama.js',
+      'app/libs/fancybox/jquery.fancybox.js',
+      'app/libs/fancybox/jquery.fancybox.pack.js',
+      'app/libs/slick-slider/slick.min.js',
       'app/libs/maskedinput/jquery.maskedinput.min.js',
-			'app/libs/owl-carousel/dist/owl.carousel.min.js',
-			'app/libs/datapicker/moment.min.js',
-			'app/libs/datapicker/daterangepicker.js',
+      //'app/libs/owl-carousel/dist/owl.carousel.min.js',
+      //'app/libs/datapicker/moment.min.js',
+      //'app/libs/datapicker/daterangepicker.js',
       //'app/js/common.js', // Always at the end
     ])
     .pipe(concat('scripts.min.js'))
