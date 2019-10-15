@@ -13,7 +13,60 @@
 @media only screen and (max-width : 1170px)
 	/**/
 @media only screen and (max-width : 992px)
-	/**/
+
+  .my_hamburger
+    display: block
+  #header
+    .container
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+    .logoHeader
+      margin: 16px 0 0
+      height: auto
+    .menuBlock
+      transition: all ease .3s
+      opacity: 0
+      transform: translate3d(0, 0, 0) scale(1, 0)
+      .menuHeader
+        margin-top: 32px
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+        &>li
+          height: auto
+          flex-grow: 0
+          a
+            font-size: 18px
+            text-transform: uppercase
+            &:after
+              display: none
+        .menu-item-has-children
+          display: flex
+          flex-direction: column
+          align-items: flex-start
+        .sub-menu
+          padding: 12px 0 12px 50px
+          height: auto
+          position: relative
+          top: auto
+          flex-direction: column
+          width: auto
+          background-color: transparent
+    .searchBlock
+      width: 100%
+      justify-content: center
+      height: auto
+      margin: 0 0 32px
+      transition: all ease .3s
+      opacity: 0
+      transform: translate3d(0, 0, 0) scale(0, 1)
+      form
+        input[type="text"]
+          height: 40px
+          width: 288px
+          border-radius: 20px
+
 @media only screen and (max-width : 944px)
 	/**/
 @media only screen and (max-width : 768px)
